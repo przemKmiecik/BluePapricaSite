@@ -1,0 +1,44 @@
+.nav-bottom-panel {
+  position: relative;
+  margin-bottom: 74px;
+  width: 100%;
+  height: 33px;
+}
+
+.nav-bottom-panel__container {
+  position: absolute;
+  left: 50%;
+  top: -1px;
+  transform: translateX(-50%);
+}
+
+.nav-bottom-panel__slider {
+  display: flex;
+  height: 100%;
+}
+
+.slider__number {
+  position: relative;
+  flex-grow: 1;
+  height: 33px;
+  width: 33px;
+  color: #6e8484;
+  font-weight: 300;
+}
+
+.number--active {
+  background: #0a655e;
+  height: 33px;
+  width: 33px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.number__styling {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-12%, -33%);
+}

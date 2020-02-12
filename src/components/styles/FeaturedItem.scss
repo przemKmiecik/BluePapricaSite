@@ -1,0 +1,113 @@
+$itemHoverBgColor: #ffffff;
+$itemHoverActiveColor: #d1b352;
+$itemTextColor: #0a655e;
+
+.featured-item {
+  flex-grow: 1;
+  width: 286px;
+
+  &:hover {
+    cursor: pointer;
+
+    .featured-item__description {
+      background: $itemHoverBgColor;
+      border: 1px solid $itemHoverActiveColor;
+      box-shadow: 20px 20px 40px hsla(180, 10%, 20%, 0.149);
+    }
+
+    .description__heading {
+      color: $itemHoverActiveColor;
+    }
+
+    .description__price {
+      color: $itemHoverActiveColor;
+    }
+
+    .description__vat {
+      color: $itemHoverActiveColor;
+    }
+
+    .description__details {
+      color: $itemHoverActiveColor;
+    }
+  }
+}
+
+.featured-item__image-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 286px;
+}
+
+.image-container__image {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.featured-item__description {
+  position: relative;
+  box-sizing: border-box;
+  width: 286px;
+  height: 261px;
+  top: -65px;
+  transition: 0.2s;
+}
+
+.description__heading {
+  position: absolute;
+  margin-top: 85px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: $itemTextColor;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.description__price {
+  position: relative;
+  top: 138px;
+  color: $itemTextColor;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+}
+
+.price__tag {
+  font-size: 30px;
+}
+
+.price__currency {
+  margin-left: 3px;
+  font-size: 18px;
+}
+
+.description__vat {
+  position: relative;
+  top: 138px;
+  line-height: 24px;
+  color: $itemTextColor;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+}
+
+.description__details {
+  position: relative;
+  top: 152px;
+  color: $itemTextColor;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.4px;
+}
